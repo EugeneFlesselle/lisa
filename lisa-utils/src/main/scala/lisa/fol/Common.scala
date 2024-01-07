@@ -806,5 +806,11 @@ trait Common {
   extension [S <: LisaObject[S], T <: LisaObject[T]](t: (S ** 5) |-> T) {
     def apply(s1: S, s2: S, s3: S, s4: S, s5: S): T = t.applyUnsafe(Seq(s1, s2, s3, s4, s5))
   }
+  extension [S <: LisaObject[S], T <: LisaObject[T]](t: (S ** 6) |-> T) {
+    def apply(s1: S, s2: S, s3: S, s4: S, s5: S, s6: S): T = t.applyUnsafe(Seq(s1, s2, s3, s4, s5, s6))
+  }
+  extension [S <: LisaObject[S], T <: LisaObject[T]](t: (S ** 7) |-> T) {
+    def apply(s1: S, s2: S, s3: S, s4: S, s5: S, s6: S, s7: S): T = t.applyUnsafe(Seq(s1, s2, s3, s4, s5, s6, s7))
+  }
 
 }
