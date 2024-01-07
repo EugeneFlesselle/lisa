@@ -112,3 +112,12 @@ lazy val examples = Project(
   .settings(commonSettings)
   .settings(commonSettings3)
   .dependsOn(root)
+
+
+lazy val fvProject = Project(
+  id = "fv-project",
+  base = file("fv-project")
+)
+  .settings(commonSettings)
+  .settings(commonSettings3)
+  .dependsOn(root)
